@@ -1,0 +1,28 @@
+{
+  "name": "Python Classroom",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+
+  // Runs once when the codespace is first created
+  "postCreateCommand": "pip install --user -r requirements.txt",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.terminal.activateEnvironment": true,
+        "files.autoSave": "afterDelay",
+        "editor.formatOnSave": false
+      }
+    }
+  },
+
+  // Keeps the container light — bump if a lab needs more RAM/CPU
+  "hostRequirements": {
+    "cpus": 2
+  }
+}
