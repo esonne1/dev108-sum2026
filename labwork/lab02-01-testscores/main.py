@@ -20,11 +20,11 @@ score3 = int(input("Enter test score 3: "))
 score3 += total_score
 
 # calculate average score
-average_score = round(total_score / 3)
-             
+total_score = (score1+score2+score3)             
+average_score = round(total_score / 3)           
 # format and display the result
 print("======================")
-print(f"Total Score:  ",{score1},{score2},{score3})
-      "\nAverage Score:", average_score)
+print(f"Total Score:  ",total_score,{score1},{score2},{score3})
+print("Average Score:", average_score)
 print()
 print("Bye")
