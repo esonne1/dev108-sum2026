@@ -2,10 +2,11 @@
 
 # Modify the Test Scores program so that it saves the three scores input into variables named score1, score2, and score 3. Then, add these scores to the total_score variable, instead of adding the entries to the total_score variable without ever saving them.
 
-# Starting Code for Exercise 2.2
+# Starting Code for Exercise 2.2  
 
 # display a welcome message
 print("The Test Scores program")
+print() # I added to edit - now I need to save change
 print()
 print("Enter 3 test scores")
 print("======================")
