@@ -17,10 +17,14 @@ score_total = 0
 test_score = 0
 
     while True:
-      test_score = (input("Enter test score: "))
-      if test_score >= 0 and test_score <= 100:
-        score_total += test_score
-        counter += 1
+        test_score = (input("Enter test score: "))
+        if test_score.lower() == "end":
+            break
+        else:
+            test_score = int(test.score)
+            if test_score >=0 and test_score<=100:
+                 score_total += test_score
+                 counter += 1
     elif test_score == 999:
         break
     else:
