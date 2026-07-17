@@ -1,15 +1,7 @@
 # starting file for Exercise 3-2
 
 # display a welcome message
-print("The Test Scores applicant)  
-  print("Enter test scores")
-  print("Enter 'end' to end input")
-  print("======================")
-
-# initialize variables
-  counter = 0
-  score_total = 0
-  test_score = 0
+print("The Test Scores Applicant")  
 
 more_tests = "y"
 
@@ -17,7 +9,7 @@ while more_tests.lower() == "y":
     print("Enter test scores")
     print("Enter 'end' to end input")
     print("======================")
-
+# initialize variables
     counter = 0
     score_total = 0
     test_score = 0
