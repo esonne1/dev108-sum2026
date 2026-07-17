@@ -1,41 +1,57 @@
 # starting file for Exercise 3-2
 
-# be sure to follow along with my video demonstration video in our Canvas assignment instructions if you need help
-
 # display a welcome message
-print("The Test Scores application")
-print()
-repeat_tests = "y"
-    while repeat_tests.lower() == "y":  
-    print("Enter test scores")
-    print("Enter "end" to end input")
-    print("======================")
+print("The Test Scores applicant)  
+  print("Enter test scores")
+  print("Enter 'end' to end input")
+  print("======================")
 
 # initialize variables
-counter = 0
-score_total = 0
-test_score = 0
+  counter = 0
+  score_total = 0
+  test_score = 0
 
-    while True:
-        test_score = (input("Enter test score: "))
-        if test_score.lower() == "end":
-            break
+more_tests = "y"
+
+while more_tests.lower() == "y":
+    print("Enter test scores")
+    print("Enter 'end' to end input")
+    print("======================")
+
+    counter = 0
+    score_total = 0
+    test_score = 0
+
+##    while True:
+##        test_score = input("Enter test score: ")
+##        if test_score.lower() == "end":
+##            break
+##        else:
+##            test_score = int(test_score)
+##            if test_score >= 0 and test_score <= 100:
+##                score_total += test_score
+##                counter += 1
+##            else:
+##                print(f"Test score must be from 0 through 100. "
+##                      f"Score discarded. Try again.")
+
+    while (test_score := input("Enter test score: ").lower()) != "end":
+        test_score = int(test_score)
+        if test_score >= 0 and test_score <= 100:
+            score_total += test_score
+            counter += 1
         else:
-            test_score = int(test.score)
-            if test_score >=0 and test_score<=100:
-                 score_total += test_score
-                 counter += 1
-    elif test_score == 999:
-        break
-    else:
-        print("Test score must be from 0 through 100. Score discarded. Try again.")
+            print(f"Test score must be from 0 through 100. "
+                  f"Score discarded. Try again.")
+            
+    # calculate average score
+    average_score = round(score_total / counter)
+                    
+    # format and display the result
+    print("======================")
+    print(f"Total Score: {score_total}"
+          f"\nAverage Score: {average_score}")
 
-# calculate average score
-average_score = round(score_total / counter)
-                
-# format and display the result
-print("======================")
-print("Total Score:", score_total,
-      "\nAverage Score:", average_score)
-print()
-print("Bye")
+    print()
+    more_tests = input("Enter another set of test scores (y/n)? ") 
+    print()
