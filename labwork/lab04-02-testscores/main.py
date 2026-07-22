@@ -27,7 +27,7 @@ while more_tests.lower() == "y":
       else:
         print(f"Test score must be from 0 through 100. "
               f"Score discarded. Try again.")
-            
+
     # calculate average score
   average_score = round(score_total / counter)
                     
